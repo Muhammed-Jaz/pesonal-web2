@@ -1,0 +1,22 @@
+$(document).ready(function(){
+    $("#myform").validate({
+        rules:{
+            name:{
+                required:true,
+                minlength:3
+            },
+            place:{
+                required:true,
+                maxlength:10
+            },
+            email:{
+                required:true,
+                email:true
+            },
+            mob:{
+                rquired:true,
+                minlength:10
+            }
+        }
+    });
+});
